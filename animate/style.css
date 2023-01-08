@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 20px;
+}
+
+@keyframes bigbig {
+  0% {
+    background-color: maroon;
+    left: 0;
+    top: 0;
+    transform: scale(0.5);
+  }
+  20% {
+    background-color: hotpink;
+    top: 230px;
+  }
+  40% {
+    background-color: hotpink;
+    top: 0;
+  }
+  60% {
+    background-color: hotpink;
+    top: 200px;
+  }
+  80% {
+    background-color: hotpink;
+    top: 0px;
+  }
+  100% {
+    background-color: magenta;
+    left: 700px;
+    top: 200px;
+  }
+}
+
+.animation {
+  width: 800px;
+  height: 300px;
+  background-color: beige;
+  border: 3ch ridge rgba(147, 133, 232, 0.692);
+}
+
+.ball {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border-radius: 50%;
+  background-color: khaki;
+  animation: bigbig 2s ease-in-out 0.5s infinite alternate;
+  animation-play-state: running;
+}
