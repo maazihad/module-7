@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+
+   <style>
+      .container {
+         display: grid;
+         grid-template-columns: repeat(5, 100px);
+         color: White;
+         font-weight: 700;
+         justify-content: center;
+         align-items: center;
+
+      }
+
+      .container>div {
+         width: 100px;
+         height: 100px;
+      }
+
+      .container>div:nth-child(2n) {
+         background-color: gold;
+      }
+
+      .container>div:nth-child(2n+1) {
+         background-color: gray;
+      }
+   </style>
+
+
+</head>
+
+<body>
+   <div class="container">
+      <div>Bangladesh</div>
+      <div>Bangladesh</div>
+      <div>Bangladesh</div>
+      <div>Bangladesh</div>
+      <div>Bangladesh</div>
+      <div>Bangladesh</div>
+      <div>Bangladesh</div>
+      <div>Bangladesh</div>
+      <div>Bangladesh</div>
+      <div>Bangladesh</div>
+   </div>
+</body>
+
+</html>
